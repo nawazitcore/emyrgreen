@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | EMYR Green Building Consultants</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .page-header {
+            height: 50vh;
+            background: linear-gradient(rgba(13, 77, 54, 0.85), rgba(13, 77, 54, 0.85)), url('https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+
+        .service-details {
+            padding: 80px 0;
+        }
+
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .service-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-img {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .service-content {
+            flex: 1;
+        }
+
+        .service-list {
+            margin-top: 20px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .service-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #555;
+        }
+
+        .service-list i {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 900px) {
+            .service-row {
+                flex-direction: column !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="EMYR Green Building Consultants" style="height: 50px;">
+            </a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="blog.html">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-outline-dark"
+                        style="padding: 8px 20px; border-radius: 30px;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container" data-aos="fade-up">
+            <h1 class="hero-title" style="font-size: 3rem;">Our Services</h1>
+            <p style="font-size: 1.2rem;">Expert solutions for high-performance buildings.</p>
+        </div>
+    </header>
+
+    <!-- Services List -->
+    <section class="service-details">
+        <div class="container">
+
+            <!-- Service 1 -->
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Green Building">
+                </div>
+                <div class="service-content">
+                    <h2 class="section-title" style="font-size: 2rem;">Green Building Certification</h2>
+                    <p style="margin-bottom: 20px; color: #666;">We provide comprehensive facilitation for various green
+                        building rating systems. From initial feasibility to final submission, we ensure your project
+                        meets all necessary criteria for certification.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> LEED (Leadership in Energy and Environmental Design)
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> IGBC (Indian Green Building Council) Ratings</li>
+                        <li><i class="fas fa-check-circle"></i> WELL Building Standard</li>
+                        <li><i class="fas fa-check-circle"></i> EDGE (Excellence in Design for Greater Efficiencies)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Energy Modeling">
+                </div>
+                <div class="service-content">
+                    <h2 class="section-title" style="font-size: 2rem;">Energy Modeling & Simulation</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Our advanced simulation team uses state-of-the-art
+                        software to predict building performance, optimize HVAC systems, and ensure daylighting comfort
+                        while minimizing glare.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Whole Building Energy Simulation</li>
+                        <li><i class="fas fa-check-circle"></i> Computational Fluid Dynamics (CFD)</li>
+                        <li><i class="fas fa-check-circle"></i> Daylight & Glare Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Sun Path & Shading Analysis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Net Zero">
+                </div>
+                <div class="service-content">
+                    <h2 class="section-title" style="font-size: 2rem;">Net-Zero & Carbon Advisory</h2>
+                    <p style="margin-bottom: 20px; color: #666;">As the world moves towards decarbonization, we help
+                        organizations define and achieve ambitious net-zero targets for carbon, energy, water, and
+                        waste.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Carbon Footprint Assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Net-Zero Energy Strategies</li>
+                        <li><i class="fas fa-check-circle"></i> Life Cycle Assessment (LCA)</li>
+                        <li><i class="fas fa-check-circle"></i> ESG Reporting & Strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Water Optimization">
+                </div>
+                <div class="service-content">
+                    <h2 class="section-title" style="font-size: 2rem;">Water & Resource Optimization</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Water is a precious resource. We design integrated
+                        water management systems that reduce demand, recycle wastewater, and harvest rainwater.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Water Balance Charts</li>
+                        <li><i class="fas fa-check-circle"></i> Rainwater Harvesting Design</li>
+                        <li><i class="fas fa-check-circle"></i> STP/ETP Technology Selection</li>
+                        <li><i class="fas fa-check-circle"></i> Solid Waste Management Plans</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="EMYR Logo" style="height: 40px;">
+                    </a>
+                    <p class="footer-desc">Leading green building consultancy firm dedicated to creating sustainable,
+                        energy-efficient, and healthy environments for a better future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">LEED Certification</a></li>
+                        <li><a href="services.html">Energy Modeling</a></li>
+                        <li><a href="services.html">Net-Zero Advisory</a></li>
+                        <li><a href="services.html">Water Audits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"
+                                style="margin-right: 10px; color: var(--secondary-color);"></i> Hyderabad, Telangana
+                        </li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--secondary-color);"></i> +91
+                            - 799 3069 321</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary-color);"></i>
+                            Shahedali.md@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 EMYR Green Building Consultants. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917993069321" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
